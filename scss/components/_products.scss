@@ -1,0 +1,24 @@
+.products {
+  min-height: 386px;
+
+  .product {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.shell {
+  position: relative;
+  height: 294px;
+
+  .product-title {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 27px 0;
+    color: $white-color;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

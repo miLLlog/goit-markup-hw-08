@@ -1,0 +1,65 @@
+.footer {
+  background-color: $bg-color-black;
+  min-height: 250px;
+
+  .footer-list {
+    padding-top: 60px;
+    display: flex;
+
+    .logo {
+      color: $white-color;
+      margin-right: 156px;
+    }
+  }
+}
+
+.footer .address {
+  font-style: normal;
+  margin-top: 20px;
+
+  .city {
+    color: $white-color;
+  }
+  .mail {
+    margin: 9px 0px;
+  }
+  .link {
+    color: $color-link;
+  }
+}
+
+.footer .social-network {
+  margin-top: 20px;
+  margin-right: 93px;
+
+  .link:hover,
+  .link:focus {
+    box-shadow: none;
+  }
+}
+
+.footer .icon {
+  background: $color-footer-icon;
+  fill: $white-color;
+}
+
+.footer .input {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $bg-color-black;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

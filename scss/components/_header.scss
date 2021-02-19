@@ -1,0 +1,14 @@
+.header {
+  border-bottom: 1px solid $header-color;
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+
+    .nav {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -25,42 +25,44 @@
           <a href="./index.html" class="logo link"
             ><span class="logo__second"> Web</span>Studio</a
           >
-          <button type="button" class="button-menu">
+          <button type="button" class="button-menu" data-menu-button>
             <svg
               width="40"
               height="40"
               aria-label="переключатель мобильного меню"
             >
-              <use href="./img/sprite.svg#icon-cross"></use>
-              <use href="./img/sprite.svg#icon-menu"></use>
+              <use href="./img/sprite.svg#icon-menu" class="icon-menu"></use>
+              <use href="./img/sprite.svg#icon-cross" class="icon-cross"></use>
             </svg>
           </button>
-          <ul hidden class="menu list">
-            <li class="items">
-              <a href="" class="link menu-link">Студия</a>
-            </li>
-            <li class="items">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="items">
-              <a href="" class="link">Контакты</a>
-            </li>
-          </ul>
+          <div class="mobile-menu" data-menu>
+            <ul class="menu list">
+              <li class="items">
+                <a href="" class="link menu-link">Студия</a>
+              </li>
+              <li class="items">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="items">
+                <a href="" class="link">Контакты</a>
+              </li>
+            </ul>
+            <div class="contacts">
+              <a href="mailto:info@devstudio.com" class="link mail">
+                <svg class="icon-envelope">
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+              <a href="tel:+380961111111" class="link">
+                <svg class="icon-phone">
+                  <use href="./img/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </div>
+          </div>
         </nav>
-        <div hidden class="contacts">
-          <a href="mailto:info@devstudio.com" class="link">
-            <svg class="icon-envelope">
-              <use href="./img/sprite.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-          <a href="tel:+380961111111" class="link">
-            <svg class="icon-phone">
-              <use href="./img/sprite.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
-        </div>
       </div>
     </header>
     <main>
@@ -139,34 +141,19 @@
           <ul class="product list">
             <li>
               <div class="shell">
-                <img
-                  src="./img/details.jpg"
-                  alt="Внимание к деталям"
-                  width="370"
-                  height="294"
-                />
+                <img src="./img/details.jpg" alt="Внимание к деталям" />
                 <h3 class="product-title list title">Десктопные приложения</h3>
               </div>
             </li>
             <li>
               <div class="shell">
-                <img
-                  src="./img/planing.jpg"
-                  alt="Планирование"
-                  width="370"
-                  height="294"
-                />
+                <img src="./img/planing.jpg" alt="Планирование" />
                 <h3 class="product-title list title">Мобильные приложения</h3>
               </div>
             </li>
             <li>
               <div class="shell">
-                <img
-                  src="./img/technology.jpg"
-                  alt="Современные технологии"
-                  width="370"
-                  height="294"
-                />
+                <img src="./img/technology.jpg" alt="Современные технологии" />
                 <h3 class="product-title list title">Дизайнерские решения</h3>
               </div>
             </li>
@@ -607,8 +594,7 @@
                 </svg>
               </div>
 
-              Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a>
+              Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
             </label>
           </div>
           <button class="btn-push item" type="submit">Отправить</button>

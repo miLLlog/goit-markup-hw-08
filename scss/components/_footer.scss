@@ -13,6 +13,10 @@
 }
 
 .footer-list {
+  .logo__second {
+    color: $white-color;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -27,10 +31,6 @@
 .footer .address {
   font-style: normal;
   margin-bottom: 60px;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 165px;
-  }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;

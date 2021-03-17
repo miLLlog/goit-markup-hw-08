@@ -41,7 +41,7 @@
                 <a href="" class="link menu-link">Студия</a>
               </li>
               <li class="items">
-                <a href="./portfolio.html" class="link">Портфолио</a>
+                <a href="./portpholio.html" class="link">Портфолио</a>
               </li>
               <li class="items">
                 <a href="" class="link">Контакты</a>
@@ -141,19 +141,31 @@
           <ul class="product list">
             <li>
               <div class="shell">
-                <img src="./img/details.jpg" alt="Внимание к деталям" />
+                <img
+                  srcset="./img/details.jpg 1x, ./img/details@2x.jpg 2x"
+                  src="./img/details.jpg"
+                  alt="Внимание к деталям"
+                />
                 <h3 class="product-title list title">Десктопные приложения</h3>
               </div>
             </li>
             <li>
               <div class="shell">
-                <img src="./img/planing.jpg" alt="Планирование" />
+                <img
+                  srcset="./img/planning.jpg 1x, ./img/planning@2x.jpg 2x"
+                  src="./img/planning.jpg"
+                  alt="Планирование"
+                />
                 <h3 class="product-title list title">Мобильные приложения</h3>
               </div>
             </li>
             <li>
               <div class="shell">
-                <img src="./img/technology.jpg" alt="Современные технологии" />
+                <img
+                  srcset="./img/technology.jpg 1x, ./img/technology@2x.jpg 2x"
+                  src="./img/technology.jpg"
+                  alt="Современные технологии"
+                />
                 <h3 class="product-title list title">Дизайнерские решения</h3>
               </div>
             </li>
@@ -166,11 +178,31 @@
           <h2 class="title first-title list">Наша команда</h2>
           <ul class="list member">
             <li class="item">
-              <img
-                src="./img/igor-mobile.jpg"
-                alt="product disigner"
-                class="member-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/igor-desktop.jpg    1x,
+                    ./img/desktop/igor-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/igor-tablet.jpg    1x,
+                    ./img/tablet/igor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px"
+                />
+                <img
+                  srcset="
+                    ./img/mobile/igor-mobile.jpg    1x,
+                    ./img/mobile/igor-mobile@2x.jpg 2x
+                  "
+                  src="./img/mobile/igor-mobile.jpg"
+                  alt="product disigner"
+                  class="member-img"
+                />
+              </picture>
               <h3 class="title team list">Игорь Демьяненко</h3>
               <p class="par list">Product Designer</p>
               <ul class="social-network list">
@@ -221,11 +253,31 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                src="./img/olga-mobile.jpg"
-                alt="Frontend Developer"
-                class="member-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/olga-desktop.jpg    1x,
+                    ./img/desktop/olga-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/olga-tablet.jpg    1x,
+                    ./img/tablet/olga-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px"
+                />
+                <img
+                  srcset="
+                    ./img/mobile/olga-mobile.jpg    1x,
+                    ./img/mobile/olga-mobile@2x.jpg 2x
+                  "
+                  src="./img/mobile/olga-mobile.jpg"
+                  alt="frontend Developer"
+                  class="member-img"
+                />
+              </picture>
               <h3 class="title team list">Ольга Репина</h3>
               <p class="par list">Frontend Developer</p>
               <ul class="social-network list">
@@ -276,11 +328,31 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                src="./img/nik-mobile.jpg"
-                alt="marketing"
-                class="member-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/nik-desktop.jpg    1x,
+                    ./img/desktop/nik-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/nik-tablet.jpg    1x,
+                    ./img/tablet/nik-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px"
+                />
+                <img
+                  srcset="
+                    ./img/mobile/nik-mobile.jpg    1x,
+                    ./img/mobile/nik-mobile@2x.jpg 2x
+                  "
+                  src="./img/mobile/nik-mobile.jpg"
+                  alt="marketer"
+                  class="member-img"
+                />
+              </picture>
               <h3 class="title team list">Николай Тарасов</h3>
               <p class="par list">Marketing</p>
               <ul class="social-network list">
@@ -331,11 +403,31 @@
               </ul>
             </li>
             <li class="item">
-              <img
-                src="./img/michael-mobile.jpg"
-                alt="ui designer"
-                class="member-img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/desktop/michael-desktop.jpg    1x,
+                    ./img/desktop/michael-desktop@2x.jpg 2x
+                  "
+                  media="(min-width:1200px"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/michael-tablet.jpg    1x,
+                    ./img/tablet/michael-tablet@2x.jpg 2x
+                  "
+                  media="(min-width:768px"
+                />
+                <img
+                  srcset="
+                    ./img/mobile/michael-mobile.jpg    1x,
+                    ./img/mobile/michael-mobile@2x.jpg 2x
+                  "
+                  src="./img/mobile/michael-mobile.jpg"
+                  alt="UI Designer"
+                  class="member-img"
+                />
+              </picture>
               <h3 class="title team list">Михаил Ермаков</h3>
               <p class="par list">UI Designer</p>
               <ul class="social-network list">
@@ -601,6 +693,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

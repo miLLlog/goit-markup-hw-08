@@ -1,7 +1,11 @@
 .products {
-  min-height: 386px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 
-  .product {
+.product {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
   }

@@ -1,39 +1,55 @@
 .clients {
-  margin-top: 95px;
-}
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-.regular-clients {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 94px;
-
-  .item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    & + .item {
-      margin-left: 30px;
-    }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-}
 
-.regular-clients .link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: $icon-color;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
+  .regular-clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .item {
+      @media screen and (max-width: 767px) {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+      }
 
-  &:hover,
-  &:focus {
-    fill: $blue-color;
-    border-color: $blue-color;
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 3 * 30px) / 3);
+        margin: 15px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 6 * 30px) / 6);
+        margin: 15px;
+      }
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      fill: $icon-color;
+      height: 90px;
+      border: 1px solid #afb1b8;
+      box-sizing: border-box;
+      border-radius: 4px;
+
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        fill: $blue-color;
+        border-color: $blue-color;
+      }
+
+      @media scree and (min-width: 768px) {
+        width: 226px;
+      }
+    }
   }
 }

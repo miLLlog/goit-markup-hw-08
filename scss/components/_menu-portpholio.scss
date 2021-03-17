@@ -1,8 +1,30 @@
-.container .button {
+.exemple {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
+.button {
   display: flex;
-  justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    .items:nth-child(1) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
   .items:not(:last-child) {
     margin-right: 8px;

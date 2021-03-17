@@ -1,11 +1,16 @@
 .logo {
   font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.192;
-  color: $black-color;
-  margin-right: 93px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $blue-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 
   .logo__second {
-    color: $blue-color;
+    color: $black-color;
   }
 }

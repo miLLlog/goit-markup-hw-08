@@ -1,55 +1,89 @@
 .crew {
   background-color: $bg-color;
-
-  margin-top: 94px;
-  padding-top: 94px;
-  min-height: 710px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
 
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    padding-top: 94px;
+  }
+
   .member {
-    display: flex;
-    justify-content: space-between;
+    .member-img {
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 361px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
 
     & > .item {
-      height: 430px;
+      padding-bottom: 24px;
       background-color: $white-color;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 4 * 30px) / 4);
+        margin: 15px;
+      }
     }
   }
-}
 
-.social-network {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
+  @media screen and (max-width: 767px) {
+    .member > .item:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
 
-  .item {
+  .social-network {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & + .item {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .social-network .link {
     display: flex;
     align-items: center;
     justify-content: center;
+    fill: $icon-color;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
 
-    & + .item {
-      margin-left: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $blue-color;
+      fill: $white-color;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
-  }
-}
-
-.social-network .link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: $icon-color;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: $blue-color;
-    fill: $white-color;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 }

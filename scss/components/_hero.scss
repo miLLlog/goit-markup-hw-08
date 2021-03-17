@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../img/mobile-hero.jpg);
+    url(../img/mobile-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -29,7 +29,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../img/hero-tablet.jpg);
+      url(../img/hero-tablet.jpg);
   }
 
   @media screen and (min-width: 1200px) {
@@ -40,7 +40,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../img/hero1.jpg);
+      url(../img/hero1.jpg);
 
     .hero-title {
       font-size: 44px;
